@@ -9,7 +9,8 @@
     "target": "es2017",
     "sourceMap": true,
     "outDir": "./dist",
-    "incremental": true
+    "incremental": true,
+    "skipLibCheck": true
   },
-  "include": ["./src/ts/**/*"]
+  "include": ["src"]
 }
