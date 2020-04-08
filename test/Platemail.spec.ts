@@ -1,10 +1,10 @@
-import Platemail from '../src/Platemail';
-import { simpleEmailTemplate } from '../examples/Templates';
+import Platemail from "../src/Platemail";
+import { simpleEmailTemplate } from "../examples/Templates";
 
-describe('emails', () => {
-  it('should match the existing snapshot', () => {
+describe("emails", () => {
+  it("should match the existing snapshot", () => {
     const pm = new Platemail();
-    let emailProps = { subject: 'Simple Email Template' };
+    let emailProps = { subject: "Simple Email Template" };
 
     let renderedEmailObject = pm.render(simpleEmailTemplate, emailProps);
 
