@@ -42,5 +42,4 @@ function htmlComp(props?: any): React.ReactElement<any> {
   );
 }
 
-export let Email = (props?: any) =>
-  createComponent(textComp(props), htmlComp(props));
+export let Email = createComponent(textComp, htmlComp);
