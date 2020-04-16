@@ -41,6 +41,40 @@ let result = renderer.render(MyWelcomeEmail, { name: "Jane" });
 // result.body.html contains the html version whereas result.body.text
 ```
 
+Using a custom component inside an email template can be done using the `createComponent` functionality. The function require both a text version and a html version of your component. The following example can be found in the `examples/` directory.
+
+```typescript
+import Platemail from "platemail";
+import { Email, createComponent } from "platemail";
+
+function customHtmlComponent(props: any): React.ReactElement<any> {
+  return <Paragraph>Welcome {props.user}!</Paragraph>;
+}
+
+function customTextComponent(props: any): React.ReactElement<any> {
+  return (
+    <>
+      Welcome {props.user}!{"\n\n"}
+    </>
+  );
+}
+
+let WelcomeMessage = createComponent(customTextComponent, customHtmlComponent);
+
+export let customEmailTemplate = (email: {
+  subject: string;
+  user: { name: string };
+}) => {
+  return (
+    <Email subject={email.subject}>
+      <WelcomeMessage user={email.user.name} />
+    </Email>
+  );
+};
+```
+
+In the future the plan is to move the createComponent functionality inside of the Platemail class, more detail as to why will come with validation of email templates.
+
 ## Future/Vision ReadMe
 
 NOTE: The following documentation helps show the vision for the direction of platemail. The following examples and usage are yet to be developed.
