@@ -23,5 +23,4 @@ function htmlComp(props: any): React.ReactElement<any> {
   );
 }
 
-export let Paragraph = (props: any) =>
-  createComponent(textComp(props), htmlComp(props));
+export let Paragraph = createComponent(textComp, htmlComp);
