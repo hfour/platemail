@@ -6,7 +6,6 @@
   "types": "dist/index.d.ts",
   "author": "Alex Dawkes",
   "license": "MIT",
-  "private": true,
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
