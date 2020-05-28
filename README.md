@@ -4,7 +4,7 @@ Simple, flexible email rendering for React!
 
 Features:
 
-- Create your own email template using pre-built components
+- Create your own email template using pre-built components or custom components
 - Email is rendered in both HTML and Text format. Giving full control over text rendering
 
 Future Features:
@@ -15,8 +15,6 @@ Future Features:
 - Complete Validation - compatibility check with email clients to ensure the email will render as intended
 
 ## Install
-
-NOTE: Once the library has met a certain functional threshold it will then be published and available for use
 
 `yarn add platemail`
 
