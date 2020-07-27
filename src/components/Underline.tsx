@@ -15,4 +15,4 @@ function htmlComp(props: any): React.ReactElement<any> {
   );
 }
 
-export let Strong = createComponent(textComp, htmlComp);
+export let Underline = createComponent(textComp, htmlComp);
