@@ -7,11 +7,13 @@ import { Italic } from "../../src/components/Italic";
 import { Strong } from "../../src/components/Strong";
 import { Underline } from "../../src/components/Underline";
 
-
-export let allComponentsEmail = (email: { subject: string }) => {
+export let AllComponentsEmail = (email: { subject: string }) => {
   return (
     <Email subject={email.subject}>
-      <Paragraph><Bold>This</Bold> <Emphasis>is</Emphasis> <Italic>a</Italic> <Strong>simple</Strong> <Underline>template.</Underline></Paragraph>
+      <Paragraph>
+        <Bold>This</Bold> <Emphasis>is</Emphasis> <Italic>a</Italic>{" "}
+        <Strong>simple</Strong> <Underline>template.</Underline>
+      </Paragraph>
     </Email>
   );
 };
