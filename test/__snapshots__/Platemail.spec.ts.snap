@@ -1,6 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`emails should allow custom components 1`] = `
+exports[`platemail match existing snapshots all components 1`] = `
+Object {
+  "body": Object {
+    "html": "<!DOCTYPE html PUBLIC \\"-//W3C//DTD XHTML 1.0 Transitional//EN\\"
+\\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\\">
+<html lang=\\"en\\"><head><meta http-equiv=\\"Content-Type\\" content=\\"text/html; charset=UTF-8\\"/><meta name=\\"format-detection\\" content=\\"telephone=no\\"/><meta name=\\"viewport\\" content=\\"width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;\\"/><meta http-equiv=\\"X-UA-Compatible\\" content=\\"IE=9; IE=8; IE=7; IE=EDGE\\"/><link href=\\"https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700,700i\\" rel=\\"stylesheet\\"/><style type=\\"text/css\\"></style></head><body><table><tr><td>Email with all Platemail components<p style=\\"font-size:20px\\"><b>This</b> <em>is</em> <i>a</i> <strong>simple</strong> <u>template.</u></p></td></tr></table></body></html>",
+    "text": "Email with all Platemail components
+
+**This** *is* *a* **simple** **template.**
+
+",
+  },
+  "subject": "Email with all Platemail components",
+}
+`;
+
+exports[`platemail match existing snapshots allows custom components 1`] = `
 Object {
   "body": Object {
     "html": "<!DOCTYPE html PUBLIC \\"-//W3C//DTD XHTML 1.0 Transitional//EN\\"
@@ -16,7 +32,7 @@ Welcome Spike!
 }
 `;
 
-exports[`emails should match the existing snapshot 1`] = `
+exports[`platemail match existing snapshots simple email template 1`] = `
 Object {
   "body": Object {
     "html": "<!DOCTYPE html PUBLIC \\"-//W3C//DTD XHTML 1.0 Transitional//EN\\"
