@@ -1,3 +1,5 @@
+![Platemail Logo](/docs/assets/platemail-logo.png)
+
 # Platemail
 
 Simple, flexible email rendering for React!
